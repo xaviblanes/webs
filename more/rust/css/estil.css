@@ -25,12 +25,6 @@ li {
   padding-right: 30px;
 }
 
-.left {
-  float: left;
-  width: 20%;
-  text-align: center;
-}
-
 .una_col {
   float: left;
   font-size:2em;
@@ -58,14 +52,6 @@ text-align: left;
   padding:40px;
 }
 
-.right {
-  background-color: #e5e5e5;
-  float: left;
-  width: 20%;
-  padding: 15px;
-  margin-top: 7px;
-  text-align: center;
-}
 
 .foot {
   text-align:center;
@@ -76,7 +62,7 @@ text-align: left;
 
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
-  .menu, .right, .tres_col {
+  .tres_col {
     width: 100%;
   }
 }
