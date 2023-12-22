@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:left;
+  margin: 5px;
+}
+.menu a {
+  display: block;
+  color: #000;
+  padding: 4px;
+  text-decoration: none;
+  display:block;
+  width:100%;
+  color:black;
+}
+
+
+.menu a:hover {
+  background-color: #ccc;
+  color: black;
+  display:block;
+  text-decoration: none;
+  width:100%;
+}
+.main {
+  color:black;
+  border-left: 2px solid #999;
+  border-top: 3px solid #bbb;
+  float:left;
+  width:78%;
+  padding:0 20px;
+}
+
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right, .foot {
+    width:100%;
+  }
+}
+
+.foot  {
+  border-top: 3px solid #bbb;
+  text-align:center;
+  color: #555;
+  background-size: cover;
+}
+</style>
+</head>
+<body style="font-family:arial;color:#555;">
+
+<div>
+<img src="images/cap.png" alt="Tomcat" width= 100%>
+</div>
+
+<div style="overflow:auto;">
+  <div class="menu">
+  <img src="images/current-event-234x60.png" alt="event" width= 100%><br>
+  
+    <h3 style="color:black">Apache Tomcat</h3>
+    <a href="index.html">Home</a>
+    <a href="taglibs.html">Taglibs</a>
+    <a href="maven.html">Maven Plugin</a>
+  </div>
+
+  <div class="main">
+    <h3 style="background-color:#ddd">Apache Tomcat</h3>
+<p>The Apache Tomcat® software is an open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. The Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket specifications are developed under the Java Community Process.</p>
+
+<p> The Apache Tomcat software is developed in an open and participatory environment and released under the Apache License version 2. The Apache Tomcat project is intended to be a collaboration of the best-of-breed developers from around the world. We invite you to participate in this open development project. To learn more about getting involved, click here.</p> 
+
+<p> Apache Tomcat software powers numerous large-scale, mission-critical web applications across a diverse range of industries and organizations. Some of these users and their stories are listed on the PoweredBy wiki page.</p> 
+
+<p> Apache Tomcat, Tomcat, Apache, the Apache feather, and the Apache Tomcat project logo are trademarks of the Apache Software Foundation.
+</p>
+<h3 style="background-color:#ddd">Tomcat 7.0.107 Released</h3>
+The Apache Tomcat Project is proud to announce the release of version 7.0.107 of Apache Tomcat. This release contains a number of bug fixes and improvements compared to version 7.0.106.</p>
+<ul>
+<li>Ensure that none of the methods on a ServletContext instance always
+    fail when running under a SecurityManager. Pull request provided by
+    Kyle Stiemann.</li>
+</ul>
+<p>
+Full details of these changes, and all the other changes, are available in the Tomcat 7 changelog.
+</p>
+
+<p><strong>Note:</strong> End of life date for Apache Tomcat 7.0.x is announced.
+  </div>
+
+</div>
+
+<div class="foot"><br><br>
+Copyright © 1999-2020, The Apache Software Foundation<br>
+Apache Tomcat, Tomcat, Apache, the Apache feather, and the Apache Tomcat project logo are either registered trademarks or trademarks of the Apache Software Foundation.
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  display: block;
+  color: #111;
+  padding: 8px 16px;
+  text-decoration: none;
+  display:block;
+  width:100%;
+  color:black;
+}
+
+
+.menu a:hover {
+  color: #ff4000;
+  display:block;
+  width:100%;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#fff;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:left;
+  color:#555;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+
+.foot  {
+  text-align:center;
+  color: #ff4000;
+  background-size: cover;
+}
+</style>
+</head>
+<body style="font-family:verdana;color:#555;">
+
+<div>
+	 <img src="images/cap.png" alt="Git" width= 100%> 
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <br><br>
+    <a href="#">About</a>
+    <a href="#">Documentation</a>
+    <a href="#">Downloads</a>
+    <a href="#">Community</a>
+    <br><br>
+    
+  </div>
+
+  <div class="main">
+    <h2>About Git</h2>
+<p>The Git feature that really makes it stand apart from nearly every other SCM out there is its branching model.
+  </p>
+
+  <p>
+    Git allows and encourages you to have multiple local branches that can be entirely independent of each other. The creation, merging, and deletion of those lines of development takes seconds.
+  </p>
+
+  <p>
+    This means that you can do things like:
+  </p>
+
+  <ul>
+    <li>
+      <strong>Frictionless Context Switching</strong>. Create a branch to try out an idea, commit a few times, switch back to where you branched from, apply a patch, switch back to where you are experimenting, and merge it in.
+    </li>
+    <li>
+      <strong>Role-Based Codelines</strong>. Have a branch that always contains only what goes to production, another that you merge work into for testing, and several smaller ones for day to day work.
+    </li>
+    <li>
+      <strong>Feature Based Workflow</strong>. Create new branches for each new feature you're working on so you can seamlessly switch back and forth between them, then delete each branch when that feature gets merged into your main line.
+    </li>
+    <li>
+      <strong>Disposable Experimentation</strong>. Create a branch to experiment in, realize it's not going to work, and just delete it - abandoning the work—with nobody else ever seeing it (even if you've pushed other branches in the meantime).
+    </li>
+  </ul>
+<img src="images/branches@2x.png" alt="fle" width= 100%>
+<p>
+    Notably, when you push to a remote repository, you do not have to push all of your branches. You can choose to share just one of your branches, a few of them, or all of them. This tends to free people to try new ideas without worrying about having to plan how and when they are going to merge it in or share it with others.
+  </p>
+
+About this site
+Patches, suggestions, and comments are welcome.
+Git is a member of Software Freedom Conservancy
+
+  <p>
+    There are ways to accomplish some of this with other systems, but the work involved is much more difficult and error-prone. Git makes this process incredibly easy and it changes the way most developers work when they learn it.
+  </p>
+  </div>
+
+  <div class="right">
+  <br><br>
+    <img src="images/progit2.png" alt="Book" width= 100%>
+    <br><br>
+    <code>The entire  written by Scott Chacon and Ben Straub is available to <a href="https://git-scm.com/book/en/v2">read online for free</a>.
+  Dead tree versions are available on <a href="http://www.amazon.com/Pro-Git-Scott-Chacon/dp/1484200772?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1430218339&amp;linkCode=as2&amp;tag=git-sfconservancy-20">Amazon.com</a>.
+  </code>
+  </div>
+</div>
+<div class="foot">
+	<br><a href="https://git-scm.com/site">About this site</a> Patches, suggestions, and comments are welcome.<br>
+	
+    Git is a member of <a href="https://git-scm.com/sfc">Software Freedom Conservancy</a><br>
+ | xavi_blanes-2020 |<br>
+</div>
+
+
+</body>
+</html>

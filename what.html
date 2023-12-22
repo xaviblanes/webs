@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Samba</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  display:block;
+  width:100%;
+  color:black;
+}
+
+a.active {
+  background-color: #e11;
+  color: white;
+  display:block;
+  width:100%;
+}
+
+.menu a:hover:not(.active) {
+  background-color: #e11;
+  color: white;
+  display:block;
+  text-decoration: underline;
+  width:100%;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#fff;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:left;
+  color:#555;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+
+.foot  {
+  background-image: url("images/bgSitemap.gif");
+  text-align:center;
+  color: white;
+  background-size: cover;
+}
+</style>
+</head>
+<body style="font-family:Verdana;color:#555;">
+
+<div>
+	 <img src="images/bgHeader.png" alt="Samba" width= 100%> 
+</div>
+
+<div style="overflow:auto">
+    <div class="menu">
+    <a href="index.html">Home</a>
+    <a class="active" href="what.html">What is Samba?</a>
+    <a href="get.html">Get Samba</a>
+    <a href="documentation.html">Documentation</a>
+  </div>
+
+  <div class="main">
+    <h2 style="color:#e11">What is Samba?</h2>
+<p>As the front page at <a href="https://www.samba.org/samba/">samba.org</a> says: </p><p>
+	<b>Samba is the standard Windows interoperability suite of programs for Linux and Unix.</b>
+	</p>
+<p>
+	Since <a href="https://www.samba.org/samba/docs/10years.html">1992</a>, Samba has provided secure, stable and fast
+	file and print services for all clients using the SMB/CIFS protocol, such as all versions of DOS
+	and Windows, OS/2, Linux and many others.
+</p>
+<p>
+	Samba is an important component to seamlessly integrate Linux/Unix Servers and Desktops
+	into Active Directory environments. It can function both as a domain controller or as a
+	regular domain member.
+</p>
+
+<p>Samba is a software package that gives network administrators flexibility and freedom in terms of setup, configuration, and choice of systems and equipment.  Because of all that it offers, Samba has grown in popularity, and continues to do so, every year since its release in 1992.</p>
+
+<p>For more details on Samba or SMB, see:</p>
+    <ul>
+    <li><a href="https://www.samba.org/samba/docs/SambaIntro.html">Intro to Samba</a></li>
+    <li><a href="https://www.samba.org/samba/devel/#learn">SMB/CIFS Links</a></li>
+    </ul>
+</p>
+  </div>
+  
+
+  <div class="right">
+    <img src="images/samba-logo.png" alt="Samba" width= 100%>
+    <h2 style="color:#e11">Donations</h2>
+    <p>Nowadays, the Samba Team needs a <a href="https://www.samba.org/samba/donations.html">dollar</a> instead of pizza ;-)</p>
+    <h3 style="color:#e11">10 years of Samba!</h3>
+<p style="font-size: 13px">Who would have believed that would eventually lead to the project that is now Samba? Thanks to the involvement of countless individuals over the years Samba has come a long way in the last decade, and is set to continue improving for the forseeable future.</p>
+
+
+  </div>
+</div>
+
+<div class="foot">
+	<br><br>(c) www.samba.org | xavi_blanes-2020<br><br>
+</div>
+
+
+</body>
+</html>

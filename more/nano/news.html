@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nano text editor</title>
+    <link rel="icon" href="favicon.ico">
+<style>
+label invert { background-color: #9200ff; color: white; }
+* {
+  box-sizing: border-box;
+}
+
+
+.main {
+  float: left;
+  width: 99%;
+  padding: 0 20px;
+  color: #9200ff;
+}
+a	{
+	color: #9200ff;
+	}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .main {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;color:#fff;">
+
+<div style="background-color: #9200ff; color: white;text-align:center;">
+  <p> Latest version: 5.9 | The GNU nano homepage | Modified: 2021 October 6  </p>
+</div>
+
+<div style="overflow:auto">
+  <div class="main">
+   <center>
+   <h2>News</h2>
+   </center>
+</td>
+</tr>
+
+<tr align="center">
+<td>
+<br><br>
+
+2021 October 6 - <b>GNU nano 5.9</b> "El manicomio ha decidido: mañana sol!"
+<br>
+<table><tbody><tr><td><ul>
+<li>The extension of a filename is added to the name of a corresponding temporary file, so that spell checking a C file, for example, will check only the comments and strings (when using 'aspell').</li>
+<li>The process number is added to the name of an emergency save file, so that when multiple nanos die they will not fight over a filename.</li>
+<li>Undoing a cutting operation will restore an anchor that was located in the cut area to its original line.</li>
+<li>When using <tt>--locking</tt>, saving a new buffer will create a lock file.</li>
+<li>Syntax highlighting for YAML files has been added.</li>
+</ul></td></tr></tbody></table>
+<br><br>
+
+2021 June 15 - <b>GNU nano 5.8</b> "Why is it necessary to be special?"
+<br>
+<table><tbody><tr><td><ul>
+<li>After a search, the spotlighting is dropped after 1.5 seconds (0.8 seconds with <tt>--quick</tt>) to avoid the idea that the text is selected.</li>
+<li>A <tt>+</tt> and a space before a filename on the command line will put the cursor at the end of the corresponding buffer.</li>
+<li>Linter messages no longer include filename and line/column numbers.</li>
+<li>Color name "grey" or "gray" can be used instead of "lightblack".</li>
+<li>The color of the minibar can be chosen with 'set minicolor'.</li>
+</ul></td></tr></tbody></table>
+<br><br>
+
+2021 April 29 - <b>GNU nano 5.7</b> "Toți ceilalți arau câmpurile"
+<br>
+<table><tbody><tr><td><ul>
+<li>The output of <tt>--constantshow</tt> (without <tt>--minibar</tt>) is more stable.</li>
+<li>When opening multiple buffers and there is an error message, this message is shown again upon first switch to the relevant buffer.</li>
+<li>The position and size of the indicator now follow actual lines, instead of visual lines when in softwrap mode, meaning that the size of the indicator can change when scrolling in softwrap mode.</li>
+</ul></td></tr></tbody></table>
+<br><br>
+
+2021 March 3 - <b>GNU nano 5.6.1</b> "Geelgors"
+<br>
+<table><tbody><tr><td><ul>
+<li>Search matches are properly colorized in softwrap mode too.</li>
+<li>Option 'highlightcolor' has been renamed to 'spotlightcolor'.</li>
+</ul></td></tr></tbody></table>
+<br><br>
+
+2021 February 24 - <b>GNU nano 5.6</b> "Wielewaal"
+<br>
+<table><tbody><tr><td><ul>
+<li>A search match gets highlighted (in black on yellow by default), in addition to placing the cursor at the start of the match.</li>
+   <li> The color combination can be changed with 'set highlightcolor'.</li>
+   <li> By default the cursor is hidden until the next keystroke, but it can be forced on with <tt>--showcursor</tt> / 'set showcursor'.</li>
+<li>Option <tt>--markmatch</tt> / 'set markmatch' has been removed.</li>
+<li>Cursor position and character code are displayed in the minibar only when option <tt>--constantshow</tt> / 'set constantshow' is used, and their display can be toggled with <tt>M-C</tt>.</li>
+<li>The state flags are displayed in the minibar only when option  <tt>--stateflags</tt> / 'set stateflags' is used.</li>
+</ul></td></tr></tbody></table>
+<br><br>
+
+2021 January 14 - <b>GNU nano 5.5</b> "Rebecca"
+<br>
+<table><tbody><tr><td><ul>
+<li>Option 'set minibar' makes nano suppress the title bar and instead show a bar with basic editing information at the bottom: file name (plus an asterisk when the buffer is modified), the cursor position (line,column), the character under the cursor (U+xxxx), the flags that <tt>--stateflags</tt> normally shows, plus the percentage of the buffer that is above the cursor.</li>
+<li>With 'set promptcolor' the color combination of the prompt bar can be changed, to allow contrasting it with the mini bar (which always has the same color as the title bar).</li>
+<li>Option 'set markmatch' highlights the result of a successful search by putting the mark at the end of the match, making the match more visible.  It also suppresses the cursor until the next keystroke.<br>
+    (If you dislike the hiding of the cursor, use 'set showcursor'.)</li>
+<li>The bindable toggle 'nowrap' has been renamed to 'breaklonglines', to match the corresponding option, like for all other toggles.</li>
+<li>Support for Slang has been removed.</li>
+</ul></td></tr></tbody></table>
+<br><br>
+
+2020 December 2 - <b>GNU nano 5.4</b> "Terre des hommes"
+<br>
+<table><tbody><tr><td><ul>
+<li>Moving the cursor now skips over combining characters (and other zero-width characters).  Deleting a character deletes  also any succeeding zero-width characters, but backspacing deletes just one character at a time.</li>
+</ul></td></tr></tbody></table>
+<br><br>
+
+2020 October 7 - <b>GNU nano 5.3</b> "Revolution!"
+<br>
+<table><tbody><tr><td><ul>
+<li>Option 'set stateflags' makes nano show the state of auto-indenting, the mark, hard-wrapping, macro recording, and soft-wrapping in the title bar.  The flags take the place of "Modified", and a modified buffer is instead indicated by an asterisk (*) after its name.</li>
+<li>Nano no longer by default tries using libmagic to determine the type of a file (when neither filename nor first line gave a clue), because in most cases it is a waste of time.  It requires using the option <tt>--magic</tt> or <tt>-!</tt> or 'set magic' to make nano try libmagic.</li>
+<li>The color of the indicator can be changed with 'set scrollercolor'.</li>
+</ul></td></tr></tbody></table>
+<br><br>
+
+2020 August 24 - <b>GNU nano 5.2</b> "Ranrapalca"
+<br>
+<table><tbody><tr><td><ul>
+<li>Making certain replacements after a large paste does not crash.</li>
+<li>Hitting a toggle at the Search prompt does not clear the answer.</li>
+<li>Using <tt>--positionlog</tt> does not complain at the first start.</li>
+<li>A macro containing a Search command will not sometimes fail.</li>
+</ul></td></tr></tbody></table>
+<br><br>
+
+2020 August 12 - <b>GNU nano 5.1</b> "Cantabria"
+<br>
+<table><tbody><tr><td><ul>
+<li><tt>M-Bsp</tt> (Alt+Backspace) deletes a word backwards, like in Bash.</li>
+<li><tt>M-[</tt> has become bindable.  (Be careful, though: as it is the starting combination of many escape sequences, avoid gluing it together with other keystrokes, like in a macro.)</li>
+<li>With <tt>--indicator</tt> and <tt>--softwrap</tt>, the first keystroke in an empty buffer does not crash.</li>
+<li>Invoking the formatter while text is marked does not crash.</li>
+<li>In UTF-8 locales, an anchor is shown as a diamond.</li>
+</ul></td></tr></tbody></table>
+<br><br>
+
+2020 July 29 - <b>GNU nano 5.0</b> "Among the fields of barley"
+<br>
+<table><tbody><tr><td><ul>
+<li>With <tt>--indicator</tt> (or <tt>-q</tt> or 'set indicator') nano will show a kind of scrollbar on the righthand side of the screen to indicate where in the buffer the viewport is located and how much it covers.</li>
+<li>With &lt;Alt+Insert&gt; any line can be "tagged" with an anchor, and &lt;Alt+PageUp&gt; and &lt;Alt+PageDown&gt; will jump to the nearest anchor.<br>
+  When using line numbers, an anchor is shown as "+" in the margin.</li>
+<li>The Execute Command prompt is now directly accessible from the main menu (with <tt>^T</tt>, replacing the Spell Checker).  The Linter, Formatter, Spell Checker, Full Justification, Suspension, and Cut-Till-End functions are available in this menu too.</li>
+<li>On terminals that support at least 256 colors, nine new color names are available: pink, purple, mauve, lagoon, mint, lime, peach, orange, and latte.  These do not have lighter versions.</li>
+<li>For the color names red, green, blue, yellow, cyan, magenta, white, and black, the prefix 'light' gives a brighter color.<br>
+  Prefix 'bright' is deprecated, as it means both bold AND light.</li>
+<li>All color names can be preceded with "bold," and/or "italic," (in that order) to get a bold and/or italic typeface.</li>
+<li>With <tt>--bookstyle</tt> (or <tt>-O</tt> or 'set bookstyle') nano considers any line that begins with whitespace as the start of a paragraph.</li>
+<li>Refreshing the screen with <tt>^L</tt> now works in every menu.</li>
+<li>In the main menu, <tt>^L</tt> also centers the line with the cursor.</li>
+<li>Toggling the help lines with <tt>M-X</tt> now works in all menus except in the help viewer and the linter.</li>
+<li>At a filename prompt, the first &lt;Tab&gt; lists the possibilities, and these are listed near the bottom instead of near the top.</li>
+<li>Bindable function 'curpos' has been renamed to 'location'.</li>
+<li>Long option <tt>--tempfile</tt> has been renamed to <tt>--saveonexit</tt>.</li>
+<li>Short option <tt>-S</tt> is now a synonym of <tt>--softwrap</tt>.</li>
+<li>The New Buffer toggle (<tt>M-F</tt>) has become non-persistent.  Options <tt>--multibuffer</tt> and 'set multibuffer' still make it default to on.</li>
+<li>Backup files will retain their group ownership (when possible).</li>
+<li>Data is synced to disk before "... lines written" is shown.</li>
+<li>The raw escape sequences for <tt>F13</tt> to <tt>F16</tt> are no longer recognized.</li>
+<li>Distro-specific syntaxes, and syntaxes of less common languages, have been moved down to subdirectory syntax/extra/.  The affected distros and others may wish to move wanted syntaxes one level up.</li>
+<li>Syntaxes for Markdown, Haskell, and Ada were added.</li>
+</ul></td></tr></tbody></table>
+<br><br>
+
+    </center>
+  </div>
+</div>
+<hr>
+<div>
+<a href="get.html"><label><invert><b>^G</b></invert> Get nano </label></a> | 
+<a href="news.html"><label><invert><b>^N</b></invert> News </label></a> | 
+<a href="who.html"><label><invert><b>^W</b></invert> Who </label></a> | 
+<a href="git.html"><label><invert><b>^T</b></invert> Git </label></a>
+</div>
+
+</body>
+</html>
+
+
