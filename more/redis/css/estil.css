@@ -2,6 +2,15 @@
   box-sizing: border-box;
   font-family: "sans-serif";
 }
+
+.menu {
+  style="padding:10px;
+  }
+
+.main {
+  width:100%;
+  }
+
 .button-indigo {
   padding:25px;
   text-align:center;
@@ -37,13 +46,16 @@ button {
   padding:30px;
   }
 
-table {
-  width:100%;
-  
-  }
-
-td {
+.dos-col {
+  vertical-align: top;
+  float:left;
   width:50%;
+  padding:3%;
+  }
+  
+.una-col {
+  float:left;
+  width:100%;
   padding:3%;
   }
 
@@ -74,18 +86,15 @@ li a:hover {
   text-decoration: underline;
 }
 
-
-footer {
+.foot {
   padding:30px;
   text-align: center;
-  background-color: #161f31;
-  color: #bbb;
-  
+  color: #999; 
   }
-
+  
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
+  .dos-col {
+      width:100%;
+    }
 }

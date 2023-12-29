@@ -1,0 +1,47 @@
+
+* {
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #1a001a;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #ff99ff;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: white;
+  margin:2px;
+}
+
+.menu {
+  float: left;
+  width: 30%;
+}
+
+
+.main {
+  float: left;
+  width: 70%;
+  padding: 0 5%;
+}
+
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main {
+    width: 100%;
+  }
+}
+

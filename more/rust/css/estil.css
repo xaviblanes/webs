@@ -46,7 +46,8 @@ li {
 }
 
 .main {
-text-align: left;
+  background-color:white;
+  text-align: left;
   float: left;
   width: 100%;
   padding:40px;

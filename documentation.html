@@ -1,171 +1,139 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Samba</title>
+  <title>Samba</title>
+  <link rel="stylesheet" href="css/estil.css">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-.menu {
-  float:left;
-  width:20%;
-  text-align:center;
-}
-.menu a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-  display:block;
-  width:100%;
-  color:black;
-}
-
-a.active {
-  background-color: #e11;
-  color: white;
-  display:block;
-  width:100%;
-}
-
-.menu a:hover:not(.active) {
-  background-color: #e11;
-  color: white;
-  display:block;
-  text-decoration: underline;
-  width:100%;
-}
-.main {
-  float:left;
-  width:60%;
-  padding:0 20px;
-}
-.right {
-  background-color:#fff;
-  float:left;
-  width:20%;
-  padding:15px;
-  margin-top:7px;
-  text-align:left;
-  color:#555;
-}
-
-@media only screen and (max-width:620px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width:100%;
-  }
-}
-
-.foot  {
-  background-image: url("images/bgSitemap.gif");
-  text-align:center;
-  color: white;
-  background-size: cover;
-}
-</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body style="font-family:Verdana;color:#555;">
 
-<div>
-	 <img src="images/bgHeader.png" alt="Samba" width= 100%> 
+<body>
+
+<!-- class="cap" -->
+
+<div class="cap">
+   <div style="padding:20px;">
+   <img src="images/samba.png" alt="Samba" width= 120px>
+   <br>
+   opening windows to a wider world</div>
+   <hr style="color:#fff;">
 </div>
 
-<div style="overflow:auto">
-    <div class="menu">
-    <a href="index.html">Home</a>
+<div style="overflow:auto"><br>
+
+<!-- class="menu" -->
+
+  <div class="menu">
+    <a class="active" href="index.html">Home</a>
     <a href="what.html">What is Samba?</a>
     <a href="get.html">Get Samba</a>
-    <a class="active" href="documentation.html">Documentation</a>
+    <a href="documentation.html">Documentation</a>
   </div>
-
+  
+<!-- class="main" -->
   <div class="main">
-    <h2 style="color:#e11">Documentation</h2>
-<p>The documentation (and in particular the man pages) given on this web page
-are taken from the latest development version of Samba. If you are using an
-earlier version of Samba then you may find some differences.</p>
+  <h2 style="color:#e11">Documentation</h2>
+  <p>The documentation (and in particular the man pages) given on this 
+  web page are taken from the latest development version of Samba. If you are 
+  using an earlier version of Samba then you may find some differences.</p>
 
-<h3>Documentation</h3>
-<ul>
+  <h3>Documentation</h3>
+  <ul>
   <li>The <a href="https://wiki.samba.org/index.php/Main_Page">Samba Wiki</a>
      is a comprehensive and certainly the most up to date documentation about
      Samba.</li>
-  <li><a href="https://wiki.samba.org/index.php/Presentations">Presentations</a> by Samba Team 
-      members</li>
+  <li><a href="https://wiki.samba.org/index.php/Presentations">Presentations</a> 
+  by Samba Team members</li>
   <li><a href="https://www.samba.org/samba/docs/man/">Samba man pages in html</a></li>
-  <li><a href="https://www.samba.org/samba/docs/GPL.html">Samba Licensing (GNU GPL)</a></li>
-</ul>
+  <li><a href="https://www.samba.org/samba/docs/GPL.html">Samba Licensing (GNU GPL)
+  </a></li>
+  </ul>
 
-<h4>Older (but hopefully still valid) misc docs</h4>
-<ul>
+  <h4>Older (but hopefully still valid) misc docs</h4>
+  <ul>
   <li><a href="http://www.ubiqx.org/cifs/">Implementing CIFS</a>; an
       on-line book describing the workings and implementation
       of the CIFS protocol suite.</li>
   <li>PDF version of the 
-      <a href="https://www.samba.org/samba/docs/Samba24Hc13.pdf">Troubleshooting Techniques</a>
-      chapter from the second edition of Sam's Teach Yourself Samba in 24 Hours 
-      (Dec. 2001)</li>
+      <a href="https://www.samba.org/samba/docs/Samba24Hc13.pdf">
+      Troubleshooting Techniques</a> chapter from the second edition of Sam's 
+      Teach Yourself Samba in 24 Hours (Dec. 2001)</li>
   <li><a href="http://www.oregontechsupport.com/samba/">The Unofficial 
       Samba HOWTO, by David Lechnyr</a></li>
   <li><a href="http://tldp.org/HOWTO/Samba-Authenticated-Gateway-HOWTO.html">Samba 
       Authenticated Gateway HOWTO</a></li>
-  <li><a href="https://www.samba.org/samba/docs/10years.html">Ten Years of Samba</a></li>
-  <li><a href="http://www.atmarkit.co.jp/flinux/special/samba3/samba3a.html">Introduction 
-      to Samba 3.0</a> by Motonobu Takahashi (written in Japanese).</li>
-  <li><a href="https://www.samba.org/samba/docs/using_samba/toc.html">Using Samba, 2ed, O'Reilly 
-      &amp; Associates</a> (Feb. 2003).  (Jan 2007: The 3rd edition
-      has been released).</li>
-  <li><a href="https://www.samba.org/samba/docs/SambaIntro.html">An Introduction to Samba</a></li>
-  <li><a href="http://www.samba.org/cifs/docs/what-is-smb.html">What is 
-      SMB?</a></li>
+  <li><a href="https://www.samba.org/samba/docs/10years.html">
+  Ten Years of Samba</a></li>
+  <li><a href="http://www.atmarkit.co.jp/flinux/special/
+  samba3/samba3a.html">Introduction to Samba 3.0</a> by Motonobu Takahashi 
+  (written in Japanese).</li>
+  <li><a href="https://www.samba.org/samba/docs/using_samba/toc.html"> Using Samba, 
+  2ed, O'Reilly &amp; Associates</a> (Feb. 2003).  (Jan 2007: The 3rd 
+  edition has been released).</li>
+  <li><a href="https://www.samba.org/samba/docs/SambaIntro.html">An Introduction 
+  to Samba</a></li>
+  <li><a href="http://www.samba.org/cifs/docs/what-is-smb.html">What is SMB?</a></li>
   <li><a href="http://www.samba.org/cifs/">What is CIFS?</a></li>
-  <li>How to use <a href="https://www.samba.org/samba/docs/swat_ssl.html">SWAT with SSL security (updated for OpenSSL)</a></li>
-</ul>
+  <li>How to use <a href="https://www.samba.org/samba/docs/swat_ssl.html">SWAT 
+  with SSL security (updated for OpenSSL)</a></li>
+  </ul>
 
-<h4>Translations</h4>
-<ul>
-  <li><a href="http://www.samba.gr.jp/project/translation/Samba3-HOWTO/
-">Samba HOWTO Collection in Japanese (ancient old documentation!)</a></li>
-  <li><a href="http://smb-conf.ru/">Samba 3 smb.conf man page in Russian (ancient old documentation!)</a></li>
-  <li><a href="http://samba-doc.ru/samba3example/index.html">Samba 3 by Example in Russian (acncient old documentation)</a></li>
-</ul>
+  <h4>Translations</h4>
+  <ul>
+  <li><a href="http://www.samba.gr.jp/project/translation/Samba3-HOWTO/">
+  Samba HOWTO Collection in Japanese (ancient old documentation!)</a></li>
+  <li><a href="http://smb-conf.ru/">Samba 3 smb.conf man page in Russian (ancient 
+  old documentation!)</a></li>
+  <li><a href="http://samba-doc.ru/samba3example/index.html">Samba 3 by Example 
+  in Russian (acncient old documentation)</a></li>
+  </ul>
 
-<h3>Contributing</h3>
-<p>Contributions are always welcome to Samba documentation.  Like everything
+  <h3>Contributing</h3>
+   <p>Contributions are always welcome to Samba documentation.  Like everything
    else concerning Samba, these docs are maintained by members of the Samba
    community, and any help is much appreciated.  Contributions can be simple 
    typo corrections or a write up of new or previously undocumented 
    features.</p>
 
-<p>The documentation is located in the docs-xml directory in each release
+   <p>The documentation is located in the docs-xml directory in each release
    branch. Please see the
    <a href="http://wiki.samba.org/index.php/Using_Git_for_Samba_Development">
    Samba Wiki</a> for information about the release branches and a short
    introduction into git.</p>
 
-<p>Documentation "patches" can be reported through 
+   <p>Documentation "patches" can be reported through 
    <a href="https://bugzilla.samba.org/">bugzilla</a>. From the bugzilla home
    page, select 'Enter a new bug report,' choose the appropriate Samba 
    branch, and finally, on the bug report form, specify 'Docs' in the 
    component menu. Don't forget to attach your documentation fixes
    against the Docbook XML source files (not the generated man pages).</p>
   </div>
-
+  
+<!-- class="right" -->
+     
   <div class="right">
     <img src="images/samba-logo.png" alt="Samba" width= 100%>
     <h2 style="color:#e11">Donations</h2>
-    <p>Nowadays, the Samba Team needs a <a href="https://www.samba.org/samba/donations.html">dollar</a> instead of pizza ;-)</p>
+    <p>Nowadays, the Samba Team needs a <a href="https://www.samba.org/samba
+    /donations.html">dollar</a> instead of pizza ;-)</p>
     <h3 style="color:#e11">10 years of Samba!</h3>
-<p style="font-size: 13px">Who would have believed that would eventually lead to the project that is now Samba? Thanks to the involvement of countless individuals over the years Samba has come a long way in the last decade, and is set to continue improving for the forseeable future.</p>
+    <p style="font-size: 13px">Who would have believed that would eventually 
+    lead to the project that is now Samba? Thanks to the involvement of 
+    countless individuals over the years Samba has come a long way in the last 
+    decade, and is set to continue improving for the forseeable future.</p>
   </div>
+  
 </div>
+
+<!-- class="foot" -->
 
 <div class="foot">
-	<br><br>(c) www.samba.org | xavi_blanes-2020<br><br>
-</div>
-
+   <div style="padding:20px;">
+   <img src="images/samba.png" alt="Samba" width= 120px>
+   <br><br>
+   (c) www.samba.org | xavi_blanes-2020 | <a href="more.html">More webs samples</a><br><br>
+</div> 
 
 </body>
 </html>

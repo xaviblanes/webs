@@ -1,97 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #fff;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: #333;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #ddd;
-}
-.main {
-  float:left;
-  width:69%;
-  padding:0 20px;
-}
-.right {
-  background-color:#fff;
-  float:left;
-  width:30%;
-  padding:15px;
-  margin-top:7px;
-  text-align:left;
-  color:#555;
-}
-
-@media only screen and (max-width:620px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width:100%;
-  }
-}
-
-</style>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Alpine |Linux|</title>
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/estils.css">
 </head>
-<body style="font-family:arial;color:#555;">
+<body>
+
+<!-- logo i menú -->
 
 <ul> 
-  <li style="float:left"><img src="images/alpinelinux-logo.svg" alt="Alpine" width= 20%></li>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li> 
+  <li style="float:left"><img src="images/alpinelinux-logo.svg" alt="Alpine" width= 160px></li>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">News</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">About</a></li> 
 </ul>
+
+<!-- banner -->
+
 <div>
 	 <img src="images/cap.png" alt="Alpine" width= 100%> 
 </div>
 
-<div class="main">
-<h2>Alpine Linux</h2>
-<p>Alpine Linux is a Linux distribution based on musl and BusyBox,  designed for security, simplicity, and resource efficiency. It used a hardened kernel until release 3.8 and compiles all user-space binaries as position-independent executables with stack-smashing protection.</p>
-<p>Because of its small size, it is commonly used in containers providing quick boot-up times.</p>
-<p>Originally, Alpine Linux began as a fork of the LEAF Project. The members of LEAF wanted to continue making a Linux distribution that could fit on a single floppy disk, whereas the Alpine Linux wished to include some more heavy weight packages such as Squid and Samba, as well as additional security features and a newer kernel.</p>
+<!-- classe main -->
 
+<div class="main">
+  <h2>Alpine Linux</h2>
+  <p>Alpine Linux is a Linux distribution based on musl and BusyBox,  designed 
+  for security, simplicity, and resource efficiency. It used a hardened kernel 
+  until release 3.8 and compiles all user-space binaries as position-independent 
+  executables with stack-smashing protection.</p>
+
+  <p>Because of its small size, it is commonly used in containers providing quick 
+  boot-up times.</p>
+  
+  <p>Originally, Alpine Linux began as a fork of the LEAF Project. The members of 
+  LEAF wanted to continue making a Linux distribution that could fit on a single 
+  floppy disk, whereas the Alpine Linux wished to include some more heavy weight 
+  packages such as Squid and Samba, as well as additional security features and a 
+  newer kernel.</p>
 </div>
 
-  <div class="right">
-<h2>Latest development</h2>
-<time>2020-10-21</time>  <a href="https://git.alpinelinux.org/">Alpine 3.12.1 released</a><br>
-<time>2020-05-29</time>  <a href="https://git.alpinelinux.org/">Alpine 3.12.0 released</a><br>
-<time>2020-04-23</time>  <a href="https://git.alpinelinux.org/">Alpine 3.9.6 released</a><br>
-<time>2020-04-23</time>  <a href="https://git.alpinelinux.org/">Alpine 3.11.6 released</a><br>
-<time>2020-03-23</time>  <a href="https://git.alpinelinux.org/">Alpine 3.11.5 released</a><br>
-<time>2020-01-16</time>  <a href="https://git.alpinelinux.org/">Alpine 3.11.3 released</a><br>
-<time>2019-12-24</time>  <a href="https://git.alpinelinux.org/">Alpine 3.11.2 released</a><br>
-<time>2019-12-19</time>  <a href="https://git.alpinelinux.org/">Alpine 3.11.0 released</a><br>
-<time>2019-10-21</time>  <a href="https://git.alpinelinux.org/">Alpine 3.10.3 released</a><br>
-<time>2019-08-20</time>  <a href="https://git.alpinelinux.org/">Alpine 3.10.2 released</a><br>
-  </div>
+<!-- classe right -->
 
-<p style="text-align: center; color: #777;">
-	<br><br<br><br<br><br>© Copyright 2020 Alpine Linux Development Team all rights reserved  | xavi_blanes-2020<br><br>
-</p>
+<div class="right">
+  <h2>Latest development</h2>
+  <time>2020-10-21</time>  <a href="https://git.alpinelinux.org/">
+  Alpine 3.12.1 released</a><br>
+  <time>2020-05-29</time>  <a href="https://git.alpinelinux.org/">
+  Alpine 3.12.0 released</a><br>
+  <time>2020-04-23</time>  <a href="https://git.alpinelinux.org/">
+  Alpine 3.9.6 released</a><br>
+  <time>2020-04-23</time>  <a href="https://git.alpinelinux.org/">
+  Alpine 3.11.6 released</a><br>
+  <time>2020-03-23</time>  <a href="https://git.alpinelinux.org/">
+  Alpine 3.11.5 released</a><br>
+  <time>2020-01-16</time>  <a href="https://git.alpinelinux.org/">
+  Alpine 3.11.3 released</a><br>
+  <time>2019-12-24</time>  <a href="https://git.alpinelinux.org/">
+  Alpine 3.11.2 released</a><br>
+  <time>2019-12-19</time>  <a href="https://git.alpinelinux.org/">
+  Alpine 3.11.0 released</a><br>
+  <time>2019-10-21</time>  <a href="https://git.alpinelinux.org/">
+  Alpine 3.10.3 released</a><br>
+  <time>2019-08-20</time>  <a href="https://git.alpinelinux.org/">
+  Alpine 3.10.2 released</a><br>
+</div>
 
-
+<div class="peu">
+  <hr><br><br>
+  © Copyright 2020 Alpine Linux Development Team all rights reserved  |
+   xavi_blanes-2020<br><br>
+</div>
 </body>
 </html>

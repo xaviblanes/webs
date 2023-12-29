@@ -1,228 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-.menu {
-  float:left;
-  width:20%;
-  text-align:center;
-}
-.banner { 
-	background: black; 
-	color: #F2F2F2; 
-	text-align:center;
-	line-height: 1.2em; 
-	padding: .3em 0; 
-	box-shadow: 0 5px 10px black; 
-	} 
-.banner a { 
-	color: #00B140; 
-	} 
-}
-.menu a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-  display:block;
-  width:100%;
-  color:black;
-}
-
-a.active {
-  background-color: #e11;
-  color: white;
-  display:block;
-  width:100%;
-}
-
-.menu a:hover:not(.active) {
-  background-color: #e11;
-  color: white;
-  display:block;
-  text-decoration: underline;
-  width:100%;
-}
-.main {
-  float:left;
-  width:75%;
-  padding:0 10px;
-}
-.right {
-  border-left:#aaa 1px solid;
-  background-color:#fff;
-  float:left;
-  width:25%;
-  padding:15px;
-  margin-top:7px;
-  text-align:left;
-  color:#555;
-}
-
-@media only screen and (max-width:620px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width:100%;
-  }
-}
-
-.foot  {
-  background-image: url("images/bgSitemap.gif");
-  text-align:center;
-  color: white;
-  background-size: cover;
-}
-</style>
+  <title>NGINX-Reverse Proxy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estils.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
-<body style="font-family:arial;color:#555;">
-<div>
+<body>
+
+<!-- classe banner -->
 
 <div class="banner">
-Learn how to embed security in your DevOps pipeline.<br><a href="https://www.nginx.com/resources/library/web-application-security">Download the Free Ebook on Web Application Security.</a></div>
+  Learn how to embed security in your DevOps pipeline.<br><a href="https:
+  //  www.nginx.com/resources/library/web-application-security">Download the 
+  Free Ebook on Web Application Security.</a></div>
 </div>
 
-<div style="overflow:auto">
+<!-- classe main -->
 
 <div class="main">
-<h1 style="color:#000;text-align:center;">nginx</h1>
-<a href="https://nginx.org/en/#basic_http_features">Basic HTTP server features</a><br><a href="https://nginx.org/en/#other_http_features">Other HTTP server features</a><br><a href="https://nginx.org/en/#mail_proxy_server_features">Mail proxy server features</a><br><a href="https://nginx.org/en/#generic_proxy_server_features">TCP/UDP proxy server features</a><br><a href="https://nginx.org/en/#architecture_and_scalability">Architecture and scalability</a><br><a href="https://nginx.org/en/#tested_os_and_platforms">Tested OS and platforms</a><br></td></tr></tbody></table><p>
-nginx [engine x] is an HTTP and reverse proxy server,
-a mail proxy server,
-and a generic TCP/UDP proxy server,
-originally written by <a href="http://sysoev.ru/en/">Igor Sysoev</a>.
-For a long time, it has been running
-on many heavily loaded Russian sites including
-<a href="http://www.yandex.ru">Yandex</a>,
-<a href="http://mail.ru">Mail.Ru</a>,
-<a href="http://vk.com">VK</a>, and
-<a href="http://www.rambler.ru">Rambler</a>.
-According to Netcraft, nginx served or proxied
-<a href="https://news.netcraft.com/archives/2020/10/21/october-2020-web-server-survey.html">25.45%
-busiest sites in October 2020</a>.
-Here are some of the success stories:
-<a href="https://blogs.dropbox.com/tech/2017/09/optimizing-web-servers-for-high-throughput-and-low-latency/">Dropbox</a>,
-<a href="https://openconnect.netflix.com/en/software/">Netflix</a>,
-<a href="https://www.nginx.com/case-studies/nginx-wordpress-com/">Wordpress.com</a>,
-<a href="http://blog.fastmail.fm/2007/01/04/webimappop-frontend-proxies-changed-to-nginx/">FastMail.FM</a>.
-</p><p>
-The sources and documentation are distributed under the
-<a href="https://nginx.org/LICENSE">2-clause BSD-like license</a>.
-</p><p>
-Commercial support is available from
-<a href="https://www.nginx.com">Nginx, Inc.</a>
-</p><a name="basic_http_features"></a><center><h4>Basic HTTP server features</h4></center><p>
-</p> <ul class="compact">
-
-<li>
-Serving static and
-<a href="https://nginx.org/en/docs/http/ngx_http_index_module.html">index</a>
-files,
-<a href="https://nginx.org/en/https://nginx.org/en/docs/http/ngx_http_autoindex_module.html">autoindexing</a>;
-<a href="https://nginx.org/en/docs/http/ngx_http_core_module.html#open_file_cache">open file descriptor cache</a>;
-</li>
-
-<li>
-<a href="https://nginx.org/en/docs/http/ngx_http_proxy_module.html">Accelerated
-reverse proxying with caching</a>;
-<a href="https://nginx.org/en/docs/http/ngx_http_upstream_module.html">load balancing
-and fault tolerance</a>;
-</li>
-
-<li>
-Accelerated support with caching of
-<a href="https://nginx.org/en/docs/http/ngx_http_fastcgi_module.html">FastCGI</a>,
-<a href="https://nginx.org/en/docs/http/ngx_http_uwsgi_module.html">uwsgi</a>,
-<a href="https://nginx.org/en/docs/http/ngx_http_scgi_module.html">SCGI</a>, and
-<a href="https://nginx.org/en/docs/http/ngx_http_memcached_module.html">memcached</a>
-servers;
-<a href="https://nginx.org/en/docs/http/ngx_http_upstream_module.html">load balancing
-and fault tolerance</a>;
-</li>
-
-<li>
-Modular architecture.
-Filters include
-<a href="https://nginx.org/en/docs/http/ngx_http_gzip_module.html">gzipping</a>,
-byte ranges, chunked responses,
-<a href="https://nginx.org/en/docs/http/ngx_http_xslt_module.html">XSLT</a>,
-<a href="https://nginx.org/en/docs/http/ngx_http_ssi_module.html">SSI</a>,
-and <a href="https://nginx.org/en/docs/http/ngx_http_image_filter_module.html">image
-transformation</a> filter.
-Multiple SSI inclusions within a single page can be processed in
-parallel if they are handled by proxied or FastCGI/uwsgi/SCGI servers;
-</li>
-
-<li>
-<a href="https://nginx.org/en/docs/http/ngx_http_ssl_module.html">SSL and
-TLS SNI support</a>;
-</li>
-
-<li>
-Support for <a href="https://nginx.org/en/docs/http/ngx_http_v2_module.html">HTTP/2</a>
-with weighted and dependency-based prioritization.
-</li>
-
-</ul><p> 
-</p><a name="https://nginx.org/en/other_http_features"></a><center><h4>Other HTTP server features</h4></center><p>
-</p> <ul class="compact">
-
-<li>
-Name-based and IP-based
-<a href="https://nginx.org/en/docs/http/request_processing.html">virtual servers</a>;
-</li>
-
-<li>
-<a href="https://nginx.org/en/docs/http/ngx_http_core_module.html#keepalive_timeout">Keep-alive</a>
-and pipelined connections support;
-</li>
-
-<li>
-<a href="https://nginx.org/en/docs/http/ngx_http_log_module.html#log_format">Access
-log formats</a>,
-<a href="https://nginx.org/en/docs/http/ngx_http_log_module.html#access_log">buffered
-log writing</a>,
-<a href="https://nginx.org/en/docs/control.html#logs">fast log rotation</a>, and
-<a href="https://nginx.org/en/docs/syslog.html">syslog logging</a>;
-</li>
-
-<li>
-3xx-5xx error codes
-<a href="https://nginx.org/en/docs/http/ngx_http_core_module.html#error_page">redirection</a>;
-</li>
-
-<li>
-The rewrite module:
-<a href="https://nginx.org/en/docs/http/ngx_http_rewrite_module.html">URI changing
-using regular expressions</a>;
-</li>
-
-<li>
-<a href="https://nginx.org/en/docs/http/ngx_http_rewrite_module.html#if">Executing
-different functions</a> depending on the
-<a href="https://nginx.org/en/docs/http/ngx_http_geo_module.html">client address</a>;
-</li>
-
-<li>
-Access control based on
-<a href="https://nginx.org/en/docs/http/ngx_http_access_module.html">client IP address</a>,
-<a href="https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html">by password (HTTP
-Basic authentication)</a> and by the
-<a href="https://nginx.org/en/docs/http/ngx_http_auth_request_module.html">result of
-subrequest</a>;
-</li>
-
-
-
-</ul>
-</li>
-
-
+  <h1 style="color:#000;text-align:center;">NGINX</h1>
+  <p>
+  <a href="https://nginx.org/en/#basic_http_features">Basic HTTP server 
+  features </a><br>
+  <a href="https://nginx.org/en/#other_http_features">Other HTTP server features</a><br>
+  <a href="https://nginx.org/en/#mail_proxy_server_features">Mail proxy 
+  server features</a><br>
+  <a href="https://nginx.org/en/#generic_proxy_server_features">TCP/UDP proxy 
+  server features</a><br>
+  <a href="https://nginx.org/en/#architecture_and_scalability">Architecture 
+  and   scalability</a><br>
+  <a href="https://nginx.org/en/#tested_os_and_platforms">Tested OS and 
+  platforms</a><br></p>
+  
+  <p>nginx [engine x] is an HTTP and reverse proxy server, a mail proxy server, and 
+  a generic TCP/UDP proxy server, originally written by <a href="http://sysoev.ru
+  /en/">Igor Sysoev</a>.
+  For a long time, it has been running on many heavily loaded Russian sites including
+  <a href="http://www.yandex.ru">Yandex</a>, <a href="http://mail.ru">Mail.Ru</a>, 
+  <a href="http://vk.com">VK</a>, and <a href="http://www.rambler.ru">Rambler</a>.   
+  According to Netcraft, nginx served or proxied <a href="https://news.netcraft.com
+  /archives/2020/10/21/october-2020-web-server-survey.html">25.45% busiest sites 
+  in October 2020</a>. Here are some of the success stories: <a href="https:
+  //blogs.dropbox.com/tech/2017/09/optimizing-web-servers-for-high-throughput-and
+  -low-latency/">Dropbox</a>, <a href="https://openconnect.netflix.com/
+  en/software/">Netflix</a>, <a href="https://www.nginx.com/case-studies/nginx
+  -wordpress-com/">Wordpress.com</a>, <a href="http://blog.fastmail.fm/2007/01/04
+  /webimappop-frontend-proxies-changed-to-nginx/">FastMail.FM</a>.</p>
+  
+  <p>The sources and documentation are distributed under the <a href="https://
+  nginx.org/LICENSE">2-clause BSD-like license</a>. </p>
+  
+  <p>Commercial support is available from <a href="https://www.nginx.com">Nginx, 
+  Inc.</a></p>
+  
+  <h4 style="text-align:center;">Basic HTTP server features</h4>
+  <ul>
+    <li>Serving static and <a href="https://nginx.org/en/docs/http
+    /ngx_http_index_module.html">index</a> files, <a href="https://nginx.org/en/
+    https://nginx.org/en/docs/http/ngx_http_autoindex_module.html">autoindexing</a>
+    ;<a href="https://nginx.org/en/docs/http/ngx_http_core_module.html#open_file_cache">
+    open file descriptor cache</a>; </li>
+    <li><a href="https://nginx.org/en/docs/http/ngx_http_proxy_module.html">
+    Accelerated reverse proxying with caching</a>; <a href="https://nginx.org/en/docs
+    /http/ngx_http_upstream_module.html">load balancing and fault tolerance</a>; </li>
+    <li>Accelerated support with caching of <a href="https://nginx.org/en/docs/
+    http/ngx_http_fastcgi_module.html">FastCGI</a>, <a href="https://nginx.org/en/
+    docs/http/ngx_http_uwsgi_module.html">uwsgi</a>, <a href="https://nginx.org/en/
+    docs/http/ngx_http_scgi_module.html">SCGI</a>, and <a href="https://nginx.org/en
+    /docs/http/ngx_http_memcached_module.html">memcached</a>servers; <a href="https:
+    //nginx.org/en/docs/http/ngx_http_upstream_module.html">load balancing and 
+    fault tolerance</a>; </li>
+    <li>Modular architecture. Filters include <a href="https://nginx.org/en/docs/
+    http/ngx_http_gzip_module.html">gzipping</a>, byte ranges, chunked responses
+    , <a href="https://nginx.org/en/docs/http/ngx_http_xslt_module.html">XSLT</a>
+    , <a href="https://nginx.org/en/docs/http/ngx_http_ssi_module.html">SSI</a>, 
+    and <a href="https://nginx.org/en/docs/http/ngx_http_image_filter_module.html">
+    image transformation</a> filter. Multiple SSI inclusions within a single page 
+    can be processed in parallel if they are handled by proxied or FastCGI/uwsgi/
+    SCGI servers;</li>
+    <li><a href="https://nginx.org/en/docs/http/ngx_http_ssl_module.html">SSL 
+    and TLS SNI support</a>;</li>
+    <li>Support for <a href="https://nginx.org/en/docs/http
+    /ngx_http_v2_module.html">HTTP/2</a>with weighted and dependency-based 
+    prioritization.</li>
+  </ul>
+  
+  <h4 style="text-align:center;">Other HTTP server features</h4>
+  <ul>
+    <li>Name-based and IP-based
+    <a href="https://nginx.org/en/docs/http/request_processing.html">virtual 
+    servers</a>;</li>
+    <li><a href="https://nginx.org/en/docs/http
+    /ngx_http_core_module.html#keepalive_timeout">Keep-alive
+    </a>and pipelined connections support;</li>
+    <li><a href="https://nginx.org/en/docs/http/ngx_http_log_module.html#log_format">
+    Access log formats</a>, <a href="https://nginx.org/en/docs/http
+    /ngx_http_log_module.html#access_log">buffered log writing</a>, 
+    <a href="https://nginx.org/en/docs/control.html#logs">fast log rotation</a>, 
+    and <a href="https://nginx.org/en/docs/syslog.html">syslog logging</a>;</li>
+    <li>3xx-5xx error codes <a href="https://nginx.org/en/docs/http
+    /ngx_http_core_module.html#error_page">redirection</a>;</li>
+    <li>The rewrite module: <a href="https://nginx.org/en/docs/http
+    /ngx_http_rewrite_module.html">URI changing using regular expressions</a>;</li>
+    <li><a href="https://nginx.org/en/docs/http/ngx_http_rewrite_module.html#if">
+    Executing different functions</a> depending on the <a href="https://nginx.org/
+    en/docs/http/ngx_http_geo_module.html">client address</a>;</li>
+    <li>Access control based on <a href="https://nginx.org/en/docs/http
+    /ngx_http_access_module.html">client IP address</a>, <a href="https://nginx.org/
+    en/docs/http/ngx_http_auth_basic_module.html">by password (HTTP 
+    Basic authentication)</a> and by the <a href="https://nginx.org/en/docs/http
+    /ngx_http_auth_request_module.html">result of subrequest</a>;</li>
+  </ul>
 </div>
+
+<!-- classe right -->
 
 <div class="right">
 	<img src="images/nginx.png" alt="NGINX" width= 60%>
@@ -230,16 +123,16 @@ subrequest</a>;
 	english<br>
 	<a href="https://nginx.org/ru/">русский</a><br><br>
 	<b>home</b><br>
-	<a href="support.html">support</a><br>
-	<a href="security.html">security</a><br>
-	<a href="documentation.html">documentation</a><br>
-	<a href="faq.html">faq</a
-	<br><br><br><br><br><br><br>
-	<i>(c) xaviblanes_2021
-	</div>
+	<a href="#">support</a><br>
+	<a href="#">security</a><br>
+	<a href="#">documentation</a><br>
+	<a href="#">faq</a>
+	<br><br>
+	<a href="https://www.nginx.com/resources/library/complete-nginx-cookbook/">
+	<img src="images/NGINX-Cookbook-2nd-ed-2022_cover.png" 
+	alt="complete-nginx-cookbook" width= 90%></a>
+	<br><br>
+	<i>(c) xaviblanes_2023</i>
 </div>
-
-
-
 </body>
 </html>

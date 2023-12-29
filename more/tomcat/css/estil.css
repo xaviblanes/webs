@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  font-family: "sans-serif";
+  color:#555;
+}
+
+.cap {
+  width:100%;
+}
+
+.logo {
+  padding: 10px;
+  float:left;
+  width:33.33%;
+  text-align:left;
+}
+
+.menu {
+  float:left;
+  width:20%;
+  text-align:left;
+}
+.menu a {
+  display: block;
+  margin-left: 10px;
+  border-radius: 15px;
+  color: #000;
+  text-decoration: none;
+  display:block;
+  width:100%;
+  color:black;
+}
+
+.menu a:hover {
+  margin-right: 10px;
+  padding-left:15px;
+  background-color: #ddd;
+  color: white;
+  font-weight: bold;
+  display:block;
+  text-decoration: none;
+  width:90%;
+}
+
+.main {
+  color:black;
+  border-left: 2px solid #999;
+  border-top: 3px solid #bbb;
+  float:left;
+  width:80%;
+  padding:10px;
+}
+
+.foot  {
+  border-top: 3px solid #bbb;
+  text-align:center;
+  color: #555;
+  background-size: cover;
+}
+
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    .menu, .main, .right, .logo {
+      width:100%;
+    }
+  }

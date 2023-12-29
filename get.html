@@ -1,160 +1,124 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Samba</title>
+  <title>Samba</title>
+  <link rel="stylesheet" href="css/estil.css">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-.menu {
-  float:left;
-  width:20%;
-  text-align:center;
-}
-.menu a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-  display:block;
-  width:100%;
-  color:black;
-}
-
-a.active {
-  background-color: #e11;
-  color: white;
-  display:block;
-  width:100%;
-}
-
-.menu a:hover:not(.active) {
-  background-color: #e11;
-  color: white;
-  display:block;
-  text-decoration: underline;
-  width:100%;
-}
-.main {
-  float:left;
-  width:60%;
-  padding:0 20px;
-}
-.right {
-  background-color:#fff;
-  float:left;
-  width:20%;
-  padding:15px;
-  margin-top:7px;
-  text-align:left;
-  color:#555;
-}
-
-@media only screen and (max-width:620px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width:100%;
-  }
-}
-
-.foot  {
-  background-image: url("images/bgSitemap.gif");
-  text-align:center;
-  color: white;
-  background-size: cover;
-}
-</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body style="font-family:Verdana;color:#555;">
 
-<div>
-	 <img src="images/bgHeader.png" alt="Samba" width= 100%> 
+<body>
+
+<!-- class="cap" -->
+
+<div class="cap">
+   <div style="padding:20px;">
+   <img src="images/samba.png" alt="Samba" width= 120px>
+   <br>
+   opening windows to a wider world</div>
+   <hr style="color:#fff;">
 </div>
 
-<div style="overflow:auto">
-    <div class="menu">
-    <a href="index.html">Home</a>
+<div style="overflow:auto"><br>
+
+<!-- class="menu" -->
+
+  <div class="menu">
+    <a class="active" href="index.html">Home</a>
     <a href="what.html">What is Samba?</a>
-    <a class="active" href="get.html">Get Samba</a>
+    <a href="get.html">Get Samba</a>
     <a href="documentation.html">Documentation</a>
   </div>
+  
+<!-- class="main" -->
 
   <div class="main">
     <h2 style="color:#e11">Download</h2>
-<p>The Samba source code is distributed via https. View the download
-area <a href="https://download.samba.org/pub/samba/">via HTTPS</a>.  The file you probably want
-is called <a href="https://download.samba.org/pub/samba/samba-latest.tar.gz">samba-latest.tar.gz</a>.
-Old releases are available in the <a href="https://download.samba.org/pub/samba/old-versions/">Samba archives</a>.</p>
+    <p>The Samba source code is distributed via https. View the download
+    area <a href="https://download.samba.org/pub/samba/">via HTTPS</a>. 
+    The file you probably want is called <a href="https://download.samba.org/pub/samba
+    /samba-latest.tar.gz">samba-latest.tar.gz</a>. Old releases are available in the 
+    <a href="https://download.samba.org/pub/samba/old-versions/">Samba archives</a>.</p>
 
-<p>The <a href="https://download.samba.org/pub/samba/samba-pubkey.asc">Samba distribution GPG public key</a>
-can be used to verify that current releases have not been tampered with.  Using
-GnuPG, simply download the Samba source distribution, the tarball signature,
-and the Samba distribution public key.  Then run</p>
+    <p>The <a href="https://download.samba.org/pub/samba/samba-pubkey.asc">Samba 
+    distribution GPG public key</a> can be used to verify that current releases have 
+    not been tampered with.  Using GnuPG, simply download the Samba source distribution, 
+    the tarball signature, and the Samba distribution public key.  Then run</p>
 
-<pre>$ gpg --import samba-pubkey.asc
-$ gunzip samba-<em>version</em>.tar.gz
-$ gpg --verify samba-<em>release</em>.tar.asc
-gpg: Signature made Tue 20 Nov 2007 07:12:04 PM CST using \
-  DSA key ID 6568B7EA
-gpg: Good signature from "Samba Distribution Verification Key \
-  ‹samba-bugs@samba.org›
-</pre>
-<br>
-<p>It is recommended that you also review the <a href="https://www.samba.org/samba/history/security.html">list of 
-   patches</a> for current releases.  For information on Samba security releases, 
-   please see our <a href="https://www.samba.org/samba/history/security.html">security page</a>.</p>
-<br>
-<h3>Binaries</h3>
-      <p>All major Linux and Free Unix distributions have Samba as a native
-      package.  See your distributor's package or port system for a
-      native install of samba on your system.</p>
+    <code style="font-family: monospace;">
+    $ gpg --import samba-pubkey.asc<br>
+    $ gunzip samba-<em>version</em>.tar.gz<br>
+    $ gpg --verify samba-<em>release</em>.tar.asc
+    gpg: Signature made Tue 20 Nov 2007 07:12:04 PM CST using DSA key ID 6568B7EA
+    gpg: Good signature from "Samba Distribution Verification Key ‹samba-bugs@samba.org›
+    </code><br>
+    
+    <p>It is recommended that you also review the <a href="https://www.samba.org/
+    samba/history/security.html">list of    patches</a> for current releases. 
+    For information on Samba security releases,    please see our <a href=
+    "https://www.samba.org/samba/history/security.html">security page</a>.</p><br>
 
-      <p><a href="https://samba.plus/">https://samba.plus/</a>
-      offers Samba packages for SLES, RHEL, and Debian and AIX.</p>
+    <h3>Binaries</h3>
+    <p>All major Linux and Free Unix distributions have Samba as a native
+    package.  See your distributor's package or port system for a
+    native install of samba on your system.</p>
 
-      <p><a href="https://en.openSUSE.org/Samba">http://en.openSUSE.org/Samba</a>
-      offers Samba packages for all SuSE Linux products (including SLES).</p>
+    <p><a href="https://samba.plus/">https://samba.plus/</a>
+    offers Samba packages for SLES, RHEL, and Debian and AIX.</p>
+
+    <p><a href="https://en.openSUSE.org/Samba">http://en.openSUSE.org/Samba</a>
+    offers Samba packages for all SuSE Linux products (including SLES).</p>
    
 	<h3 >Git Sources</h3> You can also fetch the
-          sources using the <a href="https://git-scm.org">GIT source
-          code control system</a>.  The advantage of fetching via GIT
-          is can update your sources at any time using a single
-          command.  See
-          the <a href="https://wiki.samba.org/index.php/Using_Git_for_Samba_Development">Git
-          instructions</a>.
+    sources using the <a href="https://git-scm.org">GIT source
+    code control system</a>.  The advantage of fetching via GIT
+    is can update your sources at any time using a single
+    command.  See the <a href="https://wiki.samba.org/index.php
+    /Using_Git_for_Samba_Development">Git instructions</a>.
  
-      <h3>Tools</h3>
+    <h3>Tools</h3>
       <ul>
            <li><a href="https://www.samba.org/samba/GUI/">Samba GUI managers</a></li>
-           <li><a href="https://www.wireshark.org/">Wireshark</a> (decodes NetBIOS,
-SMB/CIFS, &amp; MS-RPC)</li>
-           <li><a href="https://www.tcpdump.org/">tcpdump</a> (command line
-packet sniffer)</li>
-           <li><a href="http://www.tux.org/pub/security/secnet/tools/nat10/">NetBIOS&nbsp;Auditing
-&nbsp;Tool&nbsp;(NAT)</a></li>
-           <li><a href="https://github.com/christgau/wsdd">wsdd</a> is a Web Service Discovery (WSD) daemon written in Python</li>
-           <li><a href="https://github.com/Andy2244/wsdd2">wsdd2</a> is a WSD/LLMNR dicovery daemon written in C</li>
-
-           <li><a href="http://nbfw.sourceforge.net">nbfw</a>, the NetBIOS
-forwarder (obsolete)</li>
-          </ul> 
+           <li><a href="https://www.wireshark.org/">Wireshark</a> (decodes 
+           NetBIOS, SMB/CIFS, &amp; MS-RPC)</li>
+           <li><a href="https://www.tcpdump.org/">tcpdump</a> (command line 
+           packet sniffer)</li>
+           <li><a href="http://www.tux.org/pub/security/secnet/tools/nat10/">
+           NetBIOS&nbsp;Auditing &nbsp;Tool&nbsp;(NAT)</a></li>
+           <li><a href="https://github.com/christgau/wsdd">wsdd</a> is a Web 
+           Service Discovery (WSD) daemon written in Python</li>
+           <li><a href="https://github.com/Andy2244/wsdd2">wsdd2</a> is a 
+           WSD/LLMNR dicovery daemon written in C</li>
+           <li><a href="http://nbfw.sourceforge.net">nbfw</a>, the NetBIOS 
+           forwarder (obsolete)</li>
+      </ul>
   </div>
-
+  
+<!-- class="right" -->
+     
   <div class="right">
     <img src="images/samba-logo.png" alt="Samba" width= 100%>
     <h2 style="color:#e11">Donations</h2>
-    <p>Nowadays, the Samba Team needs a <a href="https://www.samba.org/samba/donations.html">dollar</a> instead of pizza ;-)</p>
+    <p>Nowadays, the Samba Team needs a <a href="https://www.samba.org/samba
+    /donations.html">dollar</a> instead of pizza ;-)</p>
     <h3 style="color:#e11">10 years of Samba!</h3>
-<p style="font-size: 13px">Who would have believed that would eventually lead to the project that is now Samba? Thanks to the involvement of countless individuals over the years Samba has come a long way in the last decade, and is set to continue improving for the forseeable future.</p>
+    <p style="font-size: 13px">Who would have believed that would eventually 
+    lead to the project that is now Samba? Thanks to the involvement of 
+    countless individuals over the years Samba has come a long way in the last 
+    decade, and is set to continue improving for the forseeable future.</p>
   </div>
+  
 </div>
+
+<!-- class="foot" -->
 
 <div class="foot">
-	<br><br>(c) www.samba.org | xavi_blanes-2020<br><br>
-</div>
-
+   <div style="padding:20px;">
+   <img src="images/samba.png" alt="Samba" width= 120px>
+   <br><br>
+   (c) www.samba.org | xavi_blanes-2020 | <a href="more.html">More webs samples</a><br><br>
+</div> 
 
 </body>
 </html>

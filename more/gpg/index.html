@@ -1,101 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The GNU Privacy Guard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The GNU Privacy Guard</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.cap {
-  background-color:#f0f0fc;
-  width: 100%;
-}
-
-.main {
-  float: left;
-  width: 100%;
-  padding: 20px;
-  background-color:#ddd;
-}
-
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .main, body {
-    width: 100%;
-  }
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width:85%;
-  overflow: hidden;
-  background-color: #ddd;;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: #333;
-  text-align: center;
-  font-weight: bold;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  color: #fff;
-  background-color: #99bbff;
-  font-weight: bold;
-}
-</style>
+  <link rel="stylesheet" href="css/estils.css">
 </head>
-<body style="Arial,sans-serif;background-color: #f0f0fc;">
+<body>
+<div style="overflow:auto;">
+
+<!-- classe capçalera -->
 
 <div class="cap">
-<img src="images/logo-gnupg-light-purple-bg.png" style="width:35%;">
-<br><br>
+  <img src="images/logo-gnupg-light-purple-bg.png" alt="logo" width="200px">
+</div>
+
+<!-- menú -->
+
 <ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul><br>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">News</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">About</a></li>
+</ul>
+
+<div class="main">
+  <h2>The GNU Privacy Guard</h2>
+  <p>GnuPG is a complete and free implementation of the OpenPGP standard as defined 
+  by RFC4880 (also known as PGP). GnuPG allows you to encrypt and sign your data 
+  and communications; it features a versatile key management system, along with 
+  access modules for all kinds of public key directories. GnuPG, also known as GPG, 
+  is a command line tool with features for easy integration with other applications. 
+  A wealth of frontend applications and libraries are available. GnuPG also 
+  provides support for S/MIME and Secure Shell (ssh).</p>
+
+  <p>Since its introduction in 1997, GnuPG is Free Software (meaning that it respects 
+  your freedom). It can be freely used, modified and distributed under the terms of 
+  the GNU General Public License .</p>
+  
+  <p>The current version of GnuPG is 2.2.32. See the download page for other maintained 
+  versions.</p>
+  
+  <p>Gpg4win is a Windows version of GnuPG featuring a context menu tool, a crypto 
+  manager, and an Outlook plugin to send and receive standard PGP/MIME mails. The 
+  current version of Gpg4win is 3.1.16.</p>
+  
+  <p>Arguing that you don't care about the right to privacy because you have nothing 
+  to hide is no different from saying you don't care about free speech because you 
+  have nothing to say. – Edward Snowden</p> 
+  
+  <p>Using encryption helps to protect your privacy and the privacy of the people 
+  you communicate with. Encryption makes life difficult for bulk surveillance systems. 
+  GnuPG is one of the tools that Snowden used to uncover the secrets of the NSA.</p>
+  
+  <p>Please visit the Email Self-Defense site to learn how and why you should use 
+  GnuPG for your electronic communication.</p>
 </div>
 
-<div style="overflow:auto">
-  <div class="main">
-    <h2>The GNU Privacy Guard</h2>
-    <p>
+<!-- classe peu -->
 
-GnuPG is a complete and free implementation of the OpenPGP standard as defined by RFC4880 (also known as PGP). GnuPG allows you to encrypt and sign your data and communications; it features a versatile key management system, along with access modules for all kinds of public key directories. GnuPG, also known as GPG, is a command line tool with features for easy integration with other applications. A wealth of frontend applications and libraries are available. GnuPG also provides support for S/MIME and Secure Shell (ssh).</p>
-<p>
-Since its introduction in 1997, GnuPG is Free Software (meaning that it respects your freedom). It can be freely used, modified and distributed under the terms of the GNU General Public License .
-</p><p>
-The current version of GnuPG is 2.2.32. See the download page for other maintained versions.
-</p><p>
-Gpg4win is a Windows version of GnuPG featuring a context menu tool, a crypto manager, and an Outlook plugin to send and receive standard PGP/MIME mails. The current version of Gpg4win is 3.1.16.
-</p><p>
-Arguing that you don't care about the right to privacy because you have nothing to hide is no different from saying you don't care about free speech because you have nothing to say. – Edward Snowden
-</p><p>
-Using encryption helps to protect your privacy and the privacy of the people you communicate with. Encryption makes life difficult for bulk surveillance systems. GnuPG is one of the tools that Snowden used to uncover the secrets of the NSA.
-</p><p>
-Please visit the Email Self-Defense site to learn how and why you should use GnuPG for your electronic communication.
-</p>
-
-  </div>
-
- 
+<div class="peu">
+  <a href="https://creativecommons.org/licenses/by-sa/3.0/">
+  <img src="images/cc-by-sa_80x15.png"></a>
+  <i>These web pages are Copyright 1998--2020 The GnuPG Project and licensed under 
+  a Creative Commons Attribution-ShareAlike 3.0 Unported License. See copying 
+  for details. Page source last changed on 2021-10-13.<i> 
 </div>
 
-<div style="background-color:#f0f0fc;text-align:center;padding:10px;margin-top:7px;"><img src="images/cc-by-sa_80x15.png"><i> These web pages are Copyright 1998--2020 The GnuPG Project and licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License. See copying for details. Page source last changed on 2021-10-13.<i> </div>
-
+</div>
 </body>
 </html>
 
