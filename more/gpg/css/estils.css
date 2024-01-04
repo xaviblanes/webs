@@ -18,9 +18,8 @@
 
 .main {
   border-radius:15px;
-  margin: 3%;
   float: left;
-  width: 95%;
+  width: 100%;
   padding: 20px;
   background-color:#fff;
 }
@@ -59,9 +58,3 @@ li a:hover {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .main, body {
-    width: 100%;
-  }
-}
