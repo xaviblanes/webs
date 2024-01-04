@@ -1,9 +1,8 @@
 body {
     box-sizing: border-box;
     font-family:monospace;
-    font-size:20px;
-	color: #407;
-	background-color: #fff;
+    color: #407;
+    background-color: #fff;
 }
 
 pre {
@@ -18,7 +17,6 @@ pre {
 }
 
 .menu, .menu a, .menu a:visited {
-    font-size=1.2vw;
     text-align: center;
 	color: #407;
 	background-color: #fff;
