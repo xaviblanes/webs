@@ -1,6 +1,7 @@
 body {
     box-sizing: border-box;
     font-family:monospace;
+    font-size:20px;
 	color: #407;
 	background-color: #fff;
 }
@@ -10,19 +11,21 @@ pre {
 }
 
 .cap, .cap a, .cap a:visited {
-    font-size:1.8vw;
+    font-size=1.2vw;
     text-align: center;
 	color: #fff;
 	background-color: #407;
 }
 
 .menu, .menu a, .menu a:visited {
-    font-size:1.8vw;
+    font-size=1.2vw;
     text-align: center;
 	color: #407;
 	background-color: #fff;
 }
 
+
+}
 
 
 

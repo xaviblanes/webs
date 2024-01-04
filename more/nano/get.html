@@ -1,41 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nano text editor</title>
-    <link rel="icon" href="favicon.ico">
-<style>
-label invert { background-color: #9200ff; color: white; }
-* {
-  box-sizing: border-box;
-}
-
-
-.main {
-  float: left;
-  width: 99%;
-  padding: 0 20px;
-  color: #9200ff;
-}
-a	{
-	color: #9200ff;
-	}
-
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .main {
-    width: 100%;
-  }
-}
-</style>
+   <meta charset=UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>nano - Text editor</title>
+   <link rel="icon" href="images/favicon.ico">
+   <link rel="stylesheet" href="css/estils.css">
 </head>
-<body style="font-family:Verdana;color:#fff;">
 
-<div style="background-color: #9200ff; color: white;text-align:center;">
-  <p> Latest version: 5.9 | The GNU nano homepage | Modified: 2021 October 6  </p>
-</div>
+<body>
 
-<div style="overflow:auto">
+<!-- classe capçalera -->
+
+<p class="cap">
+  Latest version: 7.2 | <a href="index.html">The GNU nano homepage</a> | Modified: 
+  2023 January 18</p>
+  
   <div class="main">
   <center><h2>Downloading GNU nano</h2></center><br>
   --> The source code xzipped: <a href="https://ftp.gnu.org/gnu/nano/nano-5.9.tar.xz"> nano-5.9.tar.xz</a><br>
@@ -44,14 +25,21 @@ a	{
   
 
   </div>
+<br>
+<hr style="color:#407;">
+
+<!-- classe menú -->
+
+<div class="menu">
+    <b>^G</b> <a href="get.html">Get Nano</a> | 
+    <b>^N</b> <a href="news.html">News</a> | 
+    <b>^W</b> <a href="who.html">Who</a> | 
+    <b>^I</b> <a href="git.html">Git</a> | 
+    <b>^D</b> <a href="#">Documentation</a> | 
+    <b>^H</b> <a href="#">History</a> | 
+    <b>^C</b> <a href="#">Contact</a> 
 </div>
-<hr>
-<div>
-<a href="get.html"><label><invert><b>^G</b></invert> Get nano </label></a> | 
-<a href="news.html"><label><invert><b>^N</b></invert> News </label></a> | 
-<a href="who.html"><label><invert><b>^W</b></invert> Who </label></a> | 
-<a href="git.html"><label><invert><b>^T</b></invert> Git </label></a>
-</div>
+<br>
 
 </body>
 </html>
