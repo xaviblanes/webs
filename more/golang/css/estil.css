@@ -49,9 +49,13 @@ li a:hover {
 }
 
 .foot {
-  list-style-type: none;
   background-color:#19334d;
   padding:30px;
-  text-align: left;
+  text-align: center;
   color: #fff; 
   }
+  
+  .foot a {
+    color:#fff;
+    }
+  
