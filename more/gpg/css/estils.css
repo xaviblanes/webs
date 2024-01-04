@@ -19,7 +19,7 @@
 .main {
   border-radius:15px;
   float: left;
-  width: 95%;
+  width: 96%;
   padding: 20px;
   background-color:#fff;
 }
@@ -33,7 +33,7 @@ ul {
   box-shadow: 10px 5px 5px gray;
   border-radius:15px;
   list-style-type: none;
-  width:98%;
+  width:96%;
   overflow: hidden;
   background-color: #ddd;
 }
