@@ -1,0 +1,120 @@
+/* css per al projecte paketo de 1r de DAW ies blasco ibáñez
+   mòdul: Lenguatges de marques i si
+   curs 24/25
+   xavi blanes                                              */
+ 
+ * {
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+    .logo{
+      width:250px;
+      margin: 2%;
+    }
+    
+    .array_logos{
+      text-align:center;
+      padding:10px;
+    }
+
+      .array_logos img{
+      height: 50px;
+    }
+    
+    .array_logos img:hover{
+      filter: brightness(80%);
+    }
+
+    .boto{
+      border-radius: 15px;
+      margin:3%;
+      padding: 1% 3%;
+      background-color: #3a8;
+      color: white;
+    }
+    
+    .boto a{
+      font-size:1.2em;
+      text-decoration:none;
+      color: white;
+    }
+    .boto:hover{
+      filter: brightness(80%);
+    }
+
+    .main-obscur{
+      padding: 5% 20%;
+      background-color:#555;
+      color: white;
+      width: 100%;
+    }
+    
+    .main-clar{
+      padding: 5% 20%;
+      background-color:white;
+      color: #333;
+      width: 100%;
+    }
+    
+    .cap {
+      color: #fff;
+      height:auto;
+      background-color:#4b5259;
+      padding: 0;
+    }
+        
+    .peu {
+      overflow: auto;
+      font-size: 0.8em;
+      color: #fff;
+      height:auto;
+      background-color:#4b5259;
+      padding: 5% 2%;
+    }
+    
+    .menu-social{
+      float: right;
+    }
+    
+    .menu-social a{
+      color: white;
+      font-size:1.5em;
+      text-decoration: none;
+    }
+    
+     .menu-social img:hover{
+      filter: brightness(80%);
+    }
+    
+      .menu {
+      float: right;
+      margin-top:20px;
+      font-size:1.3em;
+      font-weight: bold;
+      width: auto;
+    }
+  
+  .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #1ff;
+    }
+    
+    .menu li {
+        float: left;
+    }
+
+    .menu li a {
+        display: inline;
+        color: #fff;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    .menu li a:hover {
+        color: #ccc;
+        text-decoration: underline;
+    }
+  
