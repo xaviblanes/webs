@@ -9,6 +9,7 @@
 
 .main {
   width:100%;
+  overflow:auto;
   }
 
 .button-indigo {
