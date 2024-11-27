@@ -1,0 +1,141 @@
+/* css per al projecte mysql de 1r de DAW ies blasco ibáñez
+   mòdul: Lenguatges de marques i si
+   curs 24/25
+   xavi blanes                                              */
+ 
+ * {
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+     
+    .cap {
+      width:100%;
+      overflow: auto;
+    }
+    
+    .logo{
+      float:left;
+      padding:0 3%;
+      width: 25%;
+    }
+    
+    .logo img {
+        width: 200px;
+    }
+          
+    .menu {
+      float: left;
+      overflow: auto;
+      width: 75%;
+      padding-top:55px;
+    }
+    
+    .menu ul {
+        list-style-type: none;
+        overflow: hidden;
+    }
+
+    .menu li {
+        float: left;
+    }
+
+    .menu li a {
+        text-transform:uppercase;
+        display: block;
+        color:#333;
+        padding: 15px;
+        text-decoration: none;
+    }
+
+    .menu li a:hover {
+        text-decoration: underline;
+        text-decoration-color: orange;
+        text-decoration-thickness: 8px;
+     }
+     
+     .menu2 {
+      float: left;
+      overflow: auto;
+      width: 100%;
+      background-color:#3E6E93;
+    }
+    
+    .menu2 ul {
+        list-style-type: none;
+        overflow: hidden;
+    }
+
+    .menu2 li {
+        float: left;
+    }
+
+    .menu2 li a {
+        display: block;
+        color:#fff;
+        padding: 5px 10px;
+        text-decoration: none;
+    }
+
+    .menu2 li a:hover {
+        color:orange;
+     }
+
+    .slides{text-align: center;}
+    
+    .slides h1 {
+      font-weight:normal;
+      color: #555;
+    }
+
+    .slides img {
+        max-width: 100%;
+    }
+    
+    .fila {
+      overflow:auto;
+      padding: 1% 10%;
+      }
+    
+    .icons {
+        float: left;
+        overflow: auto;
+        width: 25%;
+    }
+    
+    .icons img {width:70%;}
+    
+    .icons-text {
+        float: left;
+        overflow: auto;
+        width: 75%;    
+    }
+    
+    .icons-text h2 {color:orange;}
+    
+    .fila-blau {
+      overflow:auto;
+      padding: 1% 10%;
+      background-color:#3E6E93;
+      color: white;
+      }
+    .fila-blau h2 {color:orange;}
+    
+    .peu {
+      overflow: auto;
+      height:auto;
+      background-color:#ddd;
+      padding: 2% 5% 4% 5%;
+    }
+    
+    .peu table {width:100%}
+    
+    .peu a:hover {filter: brightness(90%);}
+
+    @media only screen and (max-width: 620px) {
+      /* For mobile phones: */
+      .logo, .menu {
+        width: 100%;
+      }
+    }
+    
+  
